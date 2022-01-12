@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './App'
+import './global.css'
 
 ReactDOM.render(
-  <p>Hello</p>,
+  <App></App>,
   document.getElementById('app'),
 )

@@ -11,6 +11,17 @@
     "status": "ACTIVE"
   },
   {
+    "id": "5b992323-2c91-4e55-9759-d2a345629a33",
+    "startDate": "2022-01-12T06:35:02.352Z",
+    "endDate": "2022-01-12T08:01:16.875Z",
+    "clinicianName": "Denis Karav",
+    "patient": {
+      "id": "246ea59b-a083-49c9-a994-053726c3daa9",
+      "name": "Aaron Burr"
+    },
+    "status": "ACTIVE"
+  },
+  {
     "id": "9a970b9f-ff7a-48e3-a7a7-34c897ff01a9",
     "startDate": "2021-10-01T09:00:00.000Z",
     "endDate": "2021-10-01T09:45:00.000Z",
