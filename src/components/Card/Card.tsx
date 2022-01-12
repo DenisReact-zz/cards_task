@@ -41,7 +41,7 @@ const Card = ({...props}: any) => {
     const timeHendler = (event:any) => setTimeStart(event.target.value)
     const durationHendler = (event:any) => setDurationSession(event.target.value)
 
-    const [cuurent, setCuurent] = useState(false)
+    const [current, setCurrent] = useState(false)
     const [currentObj, setCurrentObj] = useState({
         id: "",
         startDate: "",
@@ -64,9 +64,9 @@ const Card = ({...props}: any) => {
            Number(durationSession.match(/^\d\d/)) <= 24 &&
            Number(durationSession.match(/\d\d$/)) <= 59
         ){
-            setCuurent(true)
+            setCurrent(true)
         }else{
-            setCuurent(false)
+            setCurrent(false)
         }
 
         const date = new Date(dataStart);
@@ -132,7 +132,7 @@ const Card = ({...props}: any) => {
                         </div>
 
                         <div className="control">
-                            <button className={cuurent ? "save active" : "save"} onClick={props.onPushNewCard(currentObj)}>Save</button>
+                            <button className={current ? "save active" : "save"} onClick={props.onPushNewCard(currentObj)}>Save</button>
                             <button className="delete" onClick={props.onCancelChange}>Delete</button>
                         </div>
                         
